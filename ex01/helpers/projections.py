@@ -20,5 +20,11 @@ def create_transformation_matrix(omega, t):
     M = np.zeros((3,4))
     M[0:3,0:3] = R
     M[:,3] = t
+    #M[3,3] = 1
     return M
 
+def distort(uvs, D):
+    k1 = D[0]
+    k2 = D[1]
+    r2 = 
+    uvs_d = (1 + k1 * )
